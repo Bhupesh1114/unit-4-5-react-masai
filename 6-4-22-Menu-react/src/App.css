@@ -1,0 +1,48 @@
+*{
+    font-family: sans-serif;
+}
+.App{
+ margin-left: 50px;
+}
+.App>div{
+    display:grid;
+    width:320px;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:10px;
+    margin-bottom: 20px;
+}
+
+.App>div>button{
+ border-radius:20px;
+ padding:10px 20px;
+ margin: 0px 10px;
+ border: none;;
+ color: #fff;
+ text-transform: uppercase;
+ font-weight: 600;
+}
+
+.App>div>button:first-child{
+    background-color:#16A0CB;
+}
+.App>div>button:nth-child(2){
+    background-color:#87C0CC;
+}
+.App>div>button:nth-child(3){
+    background-color:#F7A024;
+}
+.App>div>button:nth-child(4){
+    background-color:#C32F37;
+}
+.App>div>button:nth-child(5){
+    background-color:#7EAF40;
+}
+.App>div>button:nth-child(6){
+    background-color:#514B84;
+}
+.App>div>button:nth-child(7){
+    background-color:#CA3972;
+}
+.App>div>button:nth-child(8){
+    background-color:#9D783B;
+}
