@@ -1,0 +1,22 @@
+#todoItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#todoItem > div > button {
+  margin: 0px 10px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #000;
+  cursor: pointer;
+  color: #fff;
+}
+#todoItem > h1 {
+  text-transform: capitalize;
+}
+#todoItem > div > button[disabled] {
+  cursor: not-allowed;
+  background-color: grey;
+}
