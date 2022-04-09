@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+  align-items: center;
+}
+.container > img {
+  width: 70px;
+  height: 70px;
+}
+.container > div > p {
+  font-size: 24px;
+  font-weight: 500;
+}
+.container > div > button {
+  background-color: #000;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}

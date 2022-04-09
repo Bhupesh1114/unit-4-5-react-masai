@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+.container > div {
+  width: 700px;
+  height: 540px;
+  margin: 20px;
+}
