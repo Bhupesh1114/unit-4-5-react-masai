@@ -1,0 +1,27 @@
+.container{
+    width:280px;
+    border:1px solid #ccc;
+    margin: 10px 0px;
+}
+.container>div:first-child{
+    display: flex;
+    justify-content: center;
+}
+.container>div:nth-child(2)>div{
+    display: flex;
+    align-items: center;
+}
+
+.container>div:nth-child(2){
+    padding: 20px;
+}
+
+.container>div:nth-child(2)>div>p:last-child{
+    margin-left: 20px;
+    color:grey;
+    font-size:13px;
+    text-decoration: line-through;
+}
+.container>div:nth-child(2)>div>p:first-child{
+    font-weight: 600;
+}
