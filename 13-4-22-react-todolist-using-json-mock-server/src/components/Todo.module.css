@@ -1,0 +1,59 @@
+#todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+#todo > form {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgb(206, 243, 243);
+}
+
+#todo > h1 {
+  color: tomato;
+  text-decoration: underline;
+  letter-spacing: 3px;
+}
+
+#todo > form > input {
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  outline: none;
+}
+button {
+  font-size: 25px;
+  padding: 10px 30px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  margin: 0px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cyanColor {
+  background-color: rgb(206, 243, 243);
+  transition: all 0.4s ease-in-out;
+}
+.blackColor {
+  background-color: #000;
+  transition: all 0.4s ease-in-out;
+}
+
+#todo > button:first-child {
+  color: rgb(240, 240, 82);
+  padding: 10px 15px;
+  display: flex;
+}
+
+.btnBack {
+  background-color: rgb(43, 58, 226);
+}
+.white {
+  color: #fff;
+}
