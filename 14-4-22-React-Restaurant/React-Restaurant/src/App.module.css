@@ -1,0 +1,6 @@
+.App{
+    width: 80%;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    margin:auto
+}
