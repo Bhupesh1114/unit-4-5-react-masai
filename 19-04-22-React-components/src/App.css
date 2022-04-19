@@ -1,0 +1,18 @@
+.App{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
+}
+
+.App>div{
+    width:650px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+button{
+    margin:10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
