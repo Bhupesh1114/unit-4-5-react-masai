@@ -1,7 +1,7 @@
 import axios ,{AxiosResponse}from 'axios';
 import React,{useState,useEffect} from 'react';
 import styled from 'styled-components';
-import TableRow from './TableRow';
+import Table from './Table';
 
 
 type formDataType = {
@@ -41,6 +41,7 @@ const Form = () => {
     getData();
   }, [])
   
+
   const handleSort = (data:formDataType[]) => {
     data.sort((a, b) => {
       return a.price - b.price;
@@ -66,25 +67,8 @@ const Form = () => {
         <input type="number" name="price" onChange={handleChange} />
         <input type="submit" />
       </form>
-      <TableData>
-              <thead>
-                  <tr>
-                      <td>Id</td>
-                      <td>Model</td>
-                      <td>Manufacture Year</td>
-                      <td>Operating System</td>
-                      <td>Screen Width</td>
-                      <td>Screen Height</td>
-                      <td>Price</td>
-               </tr>
-              </thead>
-              <tbody>
-          {allData.map(elem => {
-            return <TableRow key={elem.id} {...elem}/>
-               })}
-              </tbody>
-          </TableData>
-
+  
+        <Table data={allData} />
     </FormData>
     </div>
     
@@ -94,24 +78,7 @@ const Form = () => {
 export default Form;
 
 // Styled-component
-export const TableData = styled.table`
-border: 1px solid #000;
-margin:10px 0px ;
-thead{
-  td{
-      border: 1px solid #000;
-      padding:5px 10px ;
-      font-weight:600;
-  }
 
-}
-tbody{
-    td{
-      border: 1px solid #000;
-    }
-  }
-
-`;
 
 export const FormData = styled.div`
 display:flex ;

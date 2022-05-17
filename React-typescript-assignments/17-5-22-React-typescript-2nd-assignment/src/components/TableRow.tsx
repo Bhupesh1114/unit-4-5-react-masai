@@ -1,6 +1,7 @@
 import React from 'react';
 
-type formDataType = {
+type propsType = {
+  value: {
     id: number;
     model: string;
     manufacturing_year: string;
@@ -9,8 +10,10 @@ type formDataType = {
     screen_width: number;
     price : number;
   }
-const TableRow = (props: formDataType) => {
-    const { id, model, manufacturing_year, operating_system, screen_height, screen_width, price } = props;
+  
+  }
+const TableRow = (props:propsType) => {
+    const { id, model, manufacturing_year, operating_system, screen_height, screen_width, price } = props.value;
   return (
       <>
           <tr>
