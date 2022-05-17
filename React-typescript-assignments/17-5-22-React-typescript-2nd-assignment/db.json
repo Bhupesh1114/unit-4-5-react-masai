@@ -1,0 +1,31 @@
+{
+  "allData": [
+    {
+      "model": "11",
+      "manufacturing_year": "2022-04-28",
+      "operating_system": "windows",
+      "screen_height": "11",
+      "screen_width": "11",
+      "price": "22222",
+      "id": 1
+    },
+    {
+      "model": "22",
+      "manufacturing_year": "2022-05-11",
+      "operating_system": "Mac os",
+      "screen_height": "12",
+      "screen_width": "12",
+      "price": "11111",
+      "id": 2
+    },
+    {
+      "model": "12",
+      "manufacturing_year": "2022-05-20",
+      "operating_system": "Mac os",
+      "screen_height": "12",
+      "screen_width": "12",
+      "price": "111",
+      "id": 3
+    }
+  ]
+}
