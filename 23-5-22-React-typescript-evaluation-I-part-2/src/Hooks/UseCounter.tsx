@@ -1,17 +1,27 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
-const UseCounter = () => {
-    const [value, setValue] = useState(0);
+const UseCounter = (num:number) => {
+    const [value, setValue] = useState(num);
 
-    const inc = (num:number) => {
-        setValue((value) => value + num);
+    const inc = (num?: number) => {
+        if (num) {
+            setValue((value) => value + num); 
+        } else {
+            setValue((value) => value + 1); 
+        }
+       
     }
-    const dec = (num:number) => {
-        setValue((value) => value - num);
+    const dec = (num?: number) => {
+        if (num) {
+            setValue((value) => value - num);
+        } else {
+            setValue((value) => value - 1);
+        }
+        
     }
 
-    const set = () => {
-        setValue(100);
+    const set = (num:number) => {
+        setValue(num);
     }
 
     return { value, inc, dec, set };

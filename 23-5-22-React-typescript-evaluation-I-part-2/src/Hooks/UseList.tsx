@@ -28,7 +28,7 @@ const UseList = (value:number[]) => {
         setList(newList);
     }
 
-    return {list,push, pop, clear, reset, map };
+    return [list, { push, pop, clear, reset, map }];
 }
 
 export default UseList;
