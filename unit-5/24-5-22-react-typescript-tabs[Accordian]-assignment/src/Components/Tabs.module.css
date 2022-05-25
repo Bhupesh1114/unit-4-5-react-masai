@@ -1,0 +1,22 @@
+.Container{
+    display:flex;
+    justify-content:center;
+}
+.Container>div{
+width:50%;
+text-align:center;
+
+}
+.Container>div>div{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 10px 0px;
+    padding:5px;
+}
+.accordian h3{
+    cursor: pointer;
+}
+.Container p{
+    padding:30px 10px;
+    width:100%;
+    margin: auto;
+}
