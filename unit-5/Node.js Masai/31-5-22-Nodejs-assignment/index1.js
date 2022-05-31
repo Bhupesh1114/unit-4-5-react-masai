@@ -36,7 +36,7 @@ if (command === "append") {
        }
    })
 } else if (command === "rename") {
-    fs.rename("test.txt", "new.txt", (error) => {
+    fs.rename(process.argv[3], process.argv[4], (error) => {
         if (error) {
             console.log("error");
         } else {
